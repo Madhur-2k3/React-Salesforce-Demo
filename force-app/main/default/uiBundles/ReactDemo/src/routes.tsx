@@ -6,6 +6,7 @@ import AccountSearch from "./pages/AccountSearch";
 import AccountObjectDetail from "./pages/AccountObjectDetailPage";
 import MyPage from './pages/MyPage';
 import Contacts from './pages/Contacts';
+import MutationTest from './pages/MutationTest';
 
 export const routes: RouteObject[] = [
   {
@@ -38,6 +39,11 @@ export const routes: RouteObject[] = [
         path:"contacts",
         element:<Contacts/>,
         handle: { showInNavigation: true, label: "Contacts" }
+      },
+      {
+        path:"mutation-test",
+        element:<MutationTest/>,
+        handle: { showInNavigation: true, label: "🧪 Mutation Test" }
       }
     
     ]
