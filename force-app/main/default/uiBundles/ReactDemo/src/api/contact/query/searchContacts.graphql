@@ -1,0 +1,20 @@
+query SearchContacts($first: Int) {
+  uiapi {
+    query {
+      Contact(first: $first) {
+        edges {
+          node {
+            Id
+            Name @optional { value }
+            Email @optional { value }
+            Phone @optional { value }
+            Account @optional {
+              Name @optional { value }
+            }
+          }
+        }
+        totalCount
+      }
+    }
+  }
+}
